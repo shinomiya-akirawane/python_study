@@ -62,6 +62,31 @@ from users import *
 admin=Admin('lily','li',12,'london')
 admin.privileges.show_privileges()
 '''
-with open('Pi_digits.txt')as file_object:
-    contents=file_object.read()
-    print(contents)
+'''
+with open('in.txt')as file_object:
+    lines=file_object.readlines()
+    pi_string=''
+    for line in lines:
+        pi_string+=line.rstrip()
+    print(pi_string)
+with open('out.txt','w') as file_object:
+    file_object.write(pi_string)
+with open('out.txt','a') as file_object:
+    file_object.write('\n'+pi_string)
+try:
+    print(5/0)
+except ZeroDivisionError:
+    print("you can't divided by 0")
+'''
+
+import json
+numbers=[2,3,4,6,8]
+filename='number.json'
+with open(filename,'w')as f_obj:
+    json.dump(numbers,f_obj)
+
+import json
+filename='number.json'
+with open(filename) as f_obj:
+    numbers=json.load(f_obj)
+print(numbers)
