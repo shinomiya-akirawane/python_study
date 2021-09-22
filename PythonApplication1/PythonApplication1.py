@@ -78,7 +78,7 @@ try:
 except ZeroDivisionError:
     print("you can't divided by 0")
 '''
-
+'''
 import json
 numbers=[2,3,4,6,8]
 filename='number.json'
@@ -90,3 +90,4 @@ filename='number.json'
 with open(filename) as f_obj:
     numbers=json.load(f_obj)
 print(numbers)
+'''

@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>PythonApplication1</Name>
     <RootNamespace>PythonApplication1</RootNamespace>
+    <TestFramework>unittest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="names.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="name_function.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="users.py">
       <SubType>Code</SubType>
     </Compile>
